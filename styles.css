@@ -33,7 +33,7 @@ body * {
 .row {
     width: auto;
     height: auto;
-    display:flex;
+    display: flex;
 }
 
 .box {
@@ -46,13 +46,6 @@ body * {
 .box:hover {
     cursor: pointer;
     background-color: #3a3a3c;
-}
-
-.box img{
-    border: none;
-    margin: 0;
-    padding: 0;
-
 }
 
 .player-pic {
@@ -85,7 +78,6 @@ body * {
 .player-turn-pic {
     width: 50px;
     height: 50px;
-    
 }
 
 .subtitle {
