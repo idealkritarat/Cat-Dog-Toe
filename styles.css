@@ -8,20 +8,26 @@ body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     user-select: none;
+    position:static;
 }
 
 body * {
     user-select: none;
 }
 
-.board {
+.game {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 5px;
     transform: translate(-50%,-50%);
+}
+
+.board {
     width: auto;
     height: auto;
+    padding: 20px;
 }
 
 .row {
@@ -54,11 +60,7 @@ body * {
 }
 
 .title-box {
-    position: absolute;
     width: auto;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%,-50%);
     background-color: #3a3a3c;
     border-radius: 20px;
     padding: 20px;
@@ -71,39 +73,33 @@ body * {
 }
 
 .subtitle-box {
-    position:absolute;
-    left: 50%;
-    top: 77%;
-    transform: translate(-50%,-50%);
     width: auto;
     background-color: #818384;
     padding: 15px;
     height: auto;
-    display: flex;
     border-radius: 10px;
+    display:block;
 }
 
 .player-turn-pic {
     width: 50px;
     height: 50px;
-    margin: 5px;
-    margin-right: 10px;
+    
 }
 
 .subtitle {
     font-size: 50px;
     color: white;
+    text-align: center;
 }
 
 .restart {
     color:white;
     background-color: red;
     padding: 20px;
-    width: 80px;
-    position : absolute;
-    left: 50%;
-    top: 1.5%;
-    transform: translate(-50%);
+    width: fit-content;
+    margin:auto;
+    margin-bottom: 20px;
     border-radius: 10px ;
     display: none;
 }

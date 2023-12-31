@@ -7,53 +7,55 @@
     <script src="scripts.js"></script>
 </head>
 <body>
-    <div id="restart" class="restart" onclick="location.reload()">
-        RESTART
-    </div>
-    <div class="title-box">
-        <div class="title">
-            CAT DOG TOE
+    <div class="game">
+        <div id="restart" class="restart" onclick="location.reload()">
+            RESTART
         </div>
-    </div>
-    <div class="board">
-        <div class="row">
-            <div class="box">
-                <img onclick="boxClicked(0)" id="player-pic-0" class="player-pic">
-            </div>
-            <div class="box">
-                <img onclick="boxClicked(1)" id="player-pic-1" class="player-pic">
-            </div>
-            <div class="box">
-                <img onclick="boxClicked(2)" id="player-pic-2" class="player-pic">
+        <div class="title-box">
+            <div class="title">
+                CAT DOG TOE
             </div>
         </div>
-        <div class="row">
-            <div class="box">
-                <img onclick="boxClicked(3)" id="player-pic-3" class="player-pic">
+        <div class="board">
+            <div class="row">
+                <div class="box">
+                    <img onclick="boxClicked(0)" id="player-pic-0" class="player-pic">
+                </div>
+                <div class="box">
+                    <img onclick="boxClicked(1)" id="player-pic-1" class="player-pic">
+                </div>
+                <div class="box">
+                    <img onclick="boxClicked(2)" id="player-pic-2" class="player-pic">
+                </div>
             </div>
-            <div class="box">
-                <img onclick="boxClicked(4)" id="player-pic-4" class="player-pic">
+            <div class="row">
+                <div class="box">
+                    <img onclick="boxClicked(3)" id="player-pic-3" class="player-pic">
+                </div>
+                <div class="box">
+                    <img onclick="boxClicked(4)" id="player-pic-4" class="player-pic">
+                </div>
+                <div class="box">
+                    <img onclick="boxClicked(5)" id="player-pic-5" class="player-pic">
+                </div>
             </div>
-            <div class="box">
-                <img onclick="boxClicked(5)" id="player-pic-5" class="player-pic">
+            <div class="row">
+                <div class="box">
+                    <img onclick="boxClicked(6)" id="player-pic-6" class="player-pic">
+                </div>
+                <div class="box">
+                    <img onclick="boxClicked(7)" id="player-pic-7" class="player-pic">
+                </div>
+                <div class="box">
+                    <img onclick="boxClicked(8)" id="player-pic-8" class="player-pic">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="box">
-                <img onclick="boxClicked(6)" id="player-pic-6" class="player-pic">
+        <div class="subtitle-box">
+            <img id="player-turn-pic" class="player-turn-pic">
+            <div id="subtitle" class="subtitle">
+                's turn.
             </div>
-            <div class="box">
-                <img onclick="boxClicked(7)" id="player-pic-7" class="player-pic">
-            </div>
-            <div class="box">
-                <img onclick="boxClicked(8)" id="player-pic-8" class="player-pic">
-            </div>
-        </div>
-    </div>
-    <div class="subtitle-box">
-        <img id="player-turn-pic" class="player-turn-pic">
-        <div id="subtitle" class="subtitle">
-            's turn.
         </div>
     </div>
 </body>
