@@ -45,6 +45,7 @@ body * {
 
 .box:hover {
     cursor: pointer;
+    background-color: #3a3a3c;
 }
 
 .box img{
